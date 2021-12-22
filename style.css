@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1: #200627;
+    --cor2: #4e105f;
+    --cor3: #9825b8;
+    --cor4: white;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+label {
+    background-color: transparent;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+input[type="checkbox"]:checked ~ nav 
+{
+ transform: translateX(350px);
+}
+
+.label:hover {
+    background-color: transparent;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.562);
+    width: 350px;
+    height: 420px;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+}
+
+ul {
+    list-style: none;
+    top:66px;
+    position: absolute;
+    width: 100%;
+}
+
+li {
+    padding: 5px 8px;
+    text-align: center;
+}
+
+.logo:hover {
+    background-color: rgba(0, 0, 0, 0.24);
+    width: 50px;
+}
+
+li a:hover {
+    background-color: #641c6483;
+}
+
+.svg {
+    width: 30px;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 18px 4px;
+    text-indent: 2px;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    background-color: #9a27b9;
+    transition-duration: 2s;
+}
